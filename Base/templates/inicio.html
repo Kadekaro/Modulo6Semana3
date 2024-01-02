@@ -31,11 +31,18 @@
     <nav>
       <main>
         {% block principal%}   <!-- Todas as páginas que extenderem daqui, irão mudar nessa parte, e o restante continuar -->
-        <a href="contato/" onmouseover="this.style.color='blue'" onmouseout="this.style.color='red'">
-         <div class="col-md-6">
-           <h6>Reserve já o banho do seu Pet</h6>
-         </div>
-        </a>
+        <div class="d-flex justify-content-between">
+          <a href="contato/" onmouseover="this.style.color='blue'" onmouseout="this.style.color='red'">
+             <div align="left">
+               <h6>Inscreva-se</h6>
+             </div>
+          </a>
+          <a href="reserva/" onmouseover="this.style.color='blue'" onmouseout="this.style.color='red'">
+            <div align="right">
+              <h6>Reserve a visita do seu pet!</h6>
+            </div>
+          </a>
+        </div>
         {% endblock %}
       </main>
     </nav>
